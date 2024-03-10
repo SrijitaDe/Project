@@ -1,0 +1,133 @@
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("theme.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container {
+  width: 100%;
+  max-width: 680px;
+  height: 650px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #00000000;
+  backdrop-filter: blur(50px);
+  border: 3px solid #7478f4;
+  margin-right: 100px;
+  box-shadow: 4px 8px 12px 4px #5db5f3 inset;
+}
+.form-title {
+  font-size: 26px;
+  text-align: center;
+  padding-bottom: 6px;
+  color: #000000;
+  font-weight: 700;
+  line-height: 2;
+}
+.main-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+  gap: 10px;
+}
+.user-input-box:nth-child(2n) {
+  justify-content: end;
+}
+#userName,
+#phoneNumber,
+#confirmPassword {
+  margin-left: 15px;
+}
+#fullName,
+#email,
+#password {
+  margin-right: 15px;
+}
+.user-input-box input::placeholder {
+  color: #808080;
+}
+.user-input-box input {
+  height: 50px;
+  width: 600px;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  background: none;
+  color: #000000;
+  font-size: 18px;
+  border-bottom: 2px solid #036ffd;
+  margin-bottom: 20px;
+}
+.gender-title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #000000;
+}
+.gender-category {
+  margin: 15px 0;
+  color: #000000;
+  accent-color: #0a43fc;
+}
+.gender-category label {
+  padding: 0 20px 0 5px;
+  font-size: 20px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input {
+  cursor: pointer;
+}
+.form-submit-btn {
+  margin-top: 20px;
+}
+.form-submit-btn input {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #036ffd;
+  border-radius: 5px;
+  color: #036ffd;
+  background: none;
+}
+.form-submit-btn input:hover {
+  background: #036ffd;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+.user-type {
+  color: #000000;
+  accent-color: #0a43fc;
+  display: block;
+  padding: 10px;
+}
+div.login{
+  text-align: center;
+  padding-top: 10px;
+}
+.remember-me{
+  padding-top: 8px;
+  color: black;
+  accent-color: #0a43fc;
+}

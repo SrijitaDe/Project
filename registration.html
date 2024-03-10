@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title"><u>New User Registration</u></h1>
+      <div class="user-type">
+        <span class="user-category">User-Type:</span>
+        <input type="radio" name="User-Type" id="user" />
+        <label for="user">User</label>
+        <input type="radio" name="User-Type" id="admin" />
+        <label for="admin">Admin</label>
+      </div>
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Full Name"
+          />
+        </div>
+        <div class="user-input-box">
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            placeholder="Username"
+          />
+        </div>
+        <div class="user-input-box">
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div class="user-input-box">
+          <input
+            type="number"
+            id="phoneNumber"
+            name="phoneNumber"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div class="user-input-box">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+          />
+        </div>
+        <div class="user-input-box">
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirm Password"
+          />
+        </div>
+      </div>
+      <div class="gender-details-box">
+        <span class="gender-title"> Gender </span>
+        <div class="gender-category">
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+      <div class="remember-me">
+        <input type="checkbox" id="remember-me-checkbox" />
+        <label for="remember-me-checkbox">Remember Me</label>
+      </div>
+      <div class="login">
+        <b>Already have an account?</b>
+        <a href="login.html">Login Account</a>
+      </div>
+      <div class="form-submit-btn">
+        <input type="submit" value="Register" />
+      </div>
+    </div>
+  </body>
+</html>
